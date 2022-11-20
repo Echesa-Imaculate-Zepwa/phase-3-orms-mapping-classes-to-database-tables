@@ -8,6 +8,15 @@ class Song
     @album = album
   end
 
+# class Song
+  # attr_accessor :name, :album, :id
+  # 
+  # def initialize(name:, album:, id: nill)
+    # @id = id
+    # @name = name
+    # @album =album
+  # end
+
   def self.create_table
     sql =  <<-SQL
       CREATE TABLE IF NOT EXISTS songs (
